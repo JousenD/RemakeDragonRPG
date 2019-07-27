@@ -6,31 +6,20 @@ using UnityEngine.AI;
 public class Mover : MonoBehaviour
 {
     Transform target;
-    Ray lastRay;
 
     // Update is called once per frame
     void Update()
     {    
-        if (Input.GetMouseButton(0)){
-            MoveToCursor();
-        }
+        // if (Input.GetMouseButton(0)){
+        //     MoveToCursor();
+        // }
         // Debug.DrawRay(lastRay.origin, lastRay.direction * 100);
         UpdateAnimator();        
     }
 
-
-    private void MoveToCursor()
+    public void MoveTo(Vector3 destination)
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        bool hasHit = Physics.Raycast(ray, out hit);
-
-        lastRay = ray;
-
-        if (hasHit)
-        {
-            GetComponent<NavMeshAgent>().destination = hit.point;
-        }
+        GetComponent<NavMeshAgent>().destination = destination;
     }
 
     private void UpdateAnimator()
