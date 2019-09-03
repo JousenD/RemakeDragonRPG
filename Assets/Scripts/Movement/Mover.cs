@@ -28,12 +28,12 @@ namespace RPG.Movement
         }
 
         public void StartMoveAction(Vector3 destination){
+            GetComponent<ActionScheduler>().StartAction(this);
             MoveTo(destination);
         }
 
         public void MoveTo(Vector3 destination)
         {
-            GetComponent<ActionScheduler>().StartAction(this);
             navMeshAgent.destination = destination;
             navMeshAgent.isStopped = false;
         }

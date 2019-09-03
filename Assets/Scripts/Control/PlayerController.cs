@@ -12,7 +12,6 @@ namespace RPG.Control
         {
             if(InteractWithCombat()) return;
             if(InteractWithMovement()) return;
-            print ("Nothing to do");
 
         }
 
@@ -22,7 +21,7 @@ namespace RPG.Control
             foreach (RaycastHit hit in hits)
             {
              CombatTarget target = hit.transform.GetComponent<CombatTarget>();  
-             if(target == null){continue;}                 
+             if(target == null) continue;                 
                 
                 if(Input.GetMouseButtonDown(0))
                 {
@@ -30,7 +29,6 @@ namespace RPG.Control
                 }
                 return true;
             }
-            GetComponent<Fighter>().Cancel();
             return false;            
         }
 
@@ -44,8 +42,7 @@ namespace RPG.Control
             {
                 if (Input.GetMouseButton(0))
                 {
-                    GetComponent<Fighter>().Cancel();
-                    GetComponent<Mover>().MoveTo(hit.point);
+                    GetComponent<Mover>().StartMoveAction(hit.point);
                 }
                 return true;
             }
