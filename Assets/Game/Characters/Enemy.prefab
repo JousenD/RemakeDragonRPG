@@ -13,7 +13,7 @@ CapsuleCollider:
   m_Radius: 0.5707185
   m_Height: 3.492344
   m_Direction: 1
-  m_Center: {x: 0.07071847, y: 0.5744715, z: 6.8280914e-10}
+  m_Center: {x: -0.01, y: 0.5744715, z: 6.8280914e-10}
 --- !u!114 &7386221546089978942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,11 +33,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
-        type: 3}
-      propertyPath: health
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 6190527711096148252, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
       propertyPath: m_Name
@@ -97,6 +92,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: healthPoints
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f22a33afc1582e7458435cfe57fa666d, type: 3}
