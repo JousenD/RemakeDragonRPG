@@ -9,21 +9,21 @@ namespace RPG.Movement
     public class Mover : MonoBehaviour,IAction
     {
         [SerializeField] Transform target;
-        
+
+        Health health;        
 
         NavMeshAgent navMeshAgent;
 
         private void Start() 
         {
             navMeshAgent = GetComponent<NavMeshAgent>();
+            health = GetComponent<Health>();
         }
         // Update is called once per frame
         void Update()
         {
-            // if (Input.GetMouseButton(0)){
-            //     MoveToCursor();
-            // }
-            // Debug.DrawRay(lastRay.origin, lastRay.direction * 100);
+            navMeshAgent.enabled = !health.IsDead();
+ 
             UpdateAnimator();
         }
 
