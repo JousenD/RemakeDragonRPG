@@ -85,35 +85,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6190527711096148252, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6190527711096148240, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 39.51
       objectReference: {fileID: 0}
     - target: {fileID: 6190527711096148240, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 6190527711096148240, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.71
       objectReference: {fileID: 0}
     - target: {fileID: 6190527711096148240, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6190527711096148240, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6190527711096148240, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6190527711096148240, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
@@ -139,6 +144,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: healthPoints
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2516527417299040400, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: weaponDamage
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f22a33afc1582e7458435cfe57fa666d, type: 3}
