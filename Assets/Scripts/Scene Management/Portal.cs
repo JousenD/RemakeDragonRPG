@@ -16,6 +16,9 @@ namespace RPG.SceneManagement
         [SerializeField] int sceneToLoad = -1; //Dummy value
         [SerializeField] Transform spawnPoint;
         [SerializeField] DestinationIdentifier destination;
+        [SerializeField] float fadeOutTime = 2f;
+        [SerializeField] float fadeWaitTime = 0.5f;
+        [SerializeField] float fadeInTime = 0.5f;
 
         private void OnTriggerEnter(Collider other) {
             if(other.gameObject.tag == ("Player")){
@@ -31,15 +34,23 @@ namespace RPG.SceneManagement
                 Debug.LogError("Scene Index is not set");
                 yield break;
             }
-
+            
             DontDestroyOnLoad(gameObject);
+
+            Fader fader = FindObjectOfType<Fader>();
+
+            yield return fader.FadeOut(fadeOutTime);
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
             
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
 
+            yield return new WaitForSecondsRealtime(fadeWaitTime);
+            yield return fader.FadeIn(fadeInTime);
+
             Destroy(gameObject);
         }
+
 
         private void UpdatePlayer(Portal otherPortal)
         {
