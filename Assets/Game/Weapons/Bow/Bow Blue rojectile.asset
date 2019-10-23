@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bfdae9f57ea5140b0703f6e5aaaa12, type: 3}
   m_Name: Bow Blue rojectile
   m_EditorClassIdentifier: 
-  weaponRange: 10
+  weaponRange: 20
   weaponDamage: 5
   animatorOverride: {fileID: 22100000, guid: 52d45cd0f5492574f87abd7f4d77aab5, type: 2}
   weaponPrefab: {fileID: 158452611365297686, guid: 07720ce458a30144ea8861e3c2136243,
     type: 3}
   isRightHanded: 0
-  projectile: {fileID: 664662763786793295, guid: bd2e0dbdde69bad46a98a8d3a1994e8a,
+  projectile: {fileID: 5074800659821824792, guid: 455d07bc3108acc4d9b008b8a384d896,
     type: 3}
