@@ -12,6 +12,7 @@ namespace RPG.Combat
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
         [SerializeField] Weapon defaultWeapon = null;
+        [SerializeField] string defaultWeaponName = "Unarmed";
 
 
         //Mover mover;
@@ -21,8 +22,10 @@ namespace RPG.Combat
 
         //public GameObject WeaponPrefab { get => weaponPrefab; set => weaponPrefab = value; }
 
-        private void Start() {
-            EquipWeapon(defaultWeapon);
+        private void Start() 
+        {
+            Weapon weapon = Resources.Load<Weapon>(defaultWeaponName);
+            EquipWeapon(weapon);
         }
 
         private void Update()

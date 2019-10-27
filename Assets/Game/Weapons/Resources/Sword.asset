@@ -18,3 +18,4 @@ MonoBehaviour:
   weaponPrefab: {fileID: 4496929963444256333, guid: 0d096033594a0d240b83979f8166f530,
     type: 3}
   isRightHanded: 1
+  projectile: {fileID: 0}

@@ -2456,6 +2456,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 864265471688107123, guid: 8c4c65b4248e3324a8c78f5c16ec7c9e,
+        type: 3}
+      propertyPath: defaultWeaponName
+      value: Unarmed
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4c65b4248e3324a8c78f5c16ec7c9e, type: 3}
 --- !u!114 &2224186735926045802
