@@ -113,7 +113,13 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.82
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5188440710639414335, guid: 62b5f9e2a348b4b469b519b9390db0bc,
+        type: 3}
+      propertyPath: characterClass
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5188440710639414335, guid: 62b5f9e2a348b4b469b519b9390db0bc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 62b5f9e2a348b4b469b519b9390db0bc, type: 3}
 --- !u!1 &2572984422351632905 stripped
 GameObject:

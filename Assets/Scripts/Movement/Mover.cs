@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using RPG.Core;
+using RPG.Resources;
 using RPG.Saving;
+using RPG.Core;
 
 namespace RPG.Movement
 {

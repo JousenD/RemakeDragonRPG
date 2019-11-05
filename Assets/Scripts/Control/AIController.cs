@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Combat;
 using RPG.Control;
-using RPG.Core;
+using RPG.Resources;
 using RPG.Movement;
 using System;
+using RPG.Core;
 
 public class AIController : MonoBehaviour
 {
