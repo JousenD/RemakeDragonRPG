@@ -26,6 +26,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 329fe2c0b262cbf48a5a8b6b2b99691b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6801401459335332389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014049678705048492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7777cb027b5bc884aa124f92042b7089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiencePoints: 0
 --- !u!1001 &819227690859546333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106,11 +119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4656287649111370065, guid: f22a33afc1582e7458435cfe57fa666d,
-        type: 3}
-      propertyPath: characterClass
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6190527711096148252, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
       propertyPath: m_Name
@@ -230,6 +238,11 @@ PrefabInstance:
       propertyPath: leftHandTransform
       value: 
       objectReference: {fileID: 819227690859949873}
+    - target: {fileID: 4656287649111370065, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: characterClass
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6190527711096148247, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
       propertyPath: m_Enabled
