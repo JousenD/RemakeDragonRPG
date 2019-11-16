@@ -45,7 +45,21 @@ namespace RPG.Stats
 
         public float GetStat(Stat stat)
         {
-            return progression.GetStat(stat, characterClass,startingLevel);
+            return progression.GetStat(stat, characterClass,currentLevel) + GetAdditiveModifier(stat);
+        }
+
+        private float GetAdditiveModifier(Stat stat)
+        {
+            float total =0;
+            foreach (IModifierProvider provider in GetComponents<IModifierProvider>())
+            {
+                foreach (float modifiers in provider.GetAdditiveModifiers(stat))
+                {
+                    total += modifiers;
+                }
+            }
+            return total;
+
         }
 
         public int GetLevel()
