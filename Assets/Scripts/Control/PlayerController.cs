@@ -11,14 +11,6 @@ namespace RPG.Control
     {
         Health health;
 
-        enum CursorType
-        {
-            None,
-            Movement,
-            Combat,
-            UI
-        }
-
         [System.Serializable]
         struct CursorMapping
         {
@@ -35,14 +27,14 @@ namespace RPG.Control
 
         void Update()
         {
-            if(InteractWithUI())return;
+            if(InteractWithUI()) return;
             if(health.IsDead())
             {
                 SetCursor(CursorType.None);
                 return;
-            } 
+            }
 
-            if(InteractWithCombat()) return;
+            if(interactWithComponent()) return;
             if(InteractWithMovement()) return;
 
             SetCursor(CursorType.None);
@@ -59,26 +51,22 @@ namespace RPG.Control
             return false;
         }
 
-        private bool InteractWithCombat()
+        private bool interactWithComponent()
         {
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
             foreach (RaycastHit hit in hits)
             {
-                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-                if(target == null) continue;  
-                if(!GetComponent<Fighter>().CanAttack(target.gameObject))
+                IRaycastable[] raycastables = hit.transform.GetComponents<IRaycastable>();
+                foreach (IRaycastable raycastable in raycastables)
                 {
-                    continue;
-                }        
-                
-                if(Input.GetMouseButton(0))
-                {
-                    GetComponent<Fighter>().Attack(target.gameObject);
+                    if (raycastable.HandleRaycast(this))
+                    {
+                        SetCursor(raycastable.GetCursorType());
+                        return true;
+                    }
                 }
-                SetCursor(CursorType.Combat);
-                return true;
             }
-            return false;            
+            return false;
         }
 
         private void SetCursor(CursorType type)
