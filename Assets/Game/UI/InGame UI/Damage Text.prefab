@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6683745957639002093}
+  - component: {fileID: -6636989283093427478}
   m_Layer: 0
   m_Name: Damage Text
   m_TagString: Untagged
@@ -31,6 +32,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6636989283093427478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5971358767276575259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42a50138fbf3f148b3923de0cc3a8d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6935319011115558569
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,6 +57,8 @@ GameObject:
   - component: {fileID: 1209709083411924003}
   - component: {fileID: 4969947187459250452}
   - component: {fileID: 5360060133537182457}
+  - component: {fileID: 7440090796179025271}
+  - component: {fileID: 7368110750080299123}
   m_Layer: 5
   m_Name: Damage Text
   m_TagString: Untagged
@@ -143,6 +158,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68768b220d26d5f468458fbe65ffe83f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &7440090796179025271
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6935319011115558569}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: ce0d278c6dfc81649a37dc5958095345, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: ce0d278c6dfc81649a37dc5958095345, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!225 &7368110750080299123
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6935319011115558569}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7541328986030176185
 GameObject:
   m_ObjectHideFlags: 0

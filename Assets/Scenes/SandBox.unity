@@ -1523,6 +1523,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: f65f163a5285f644aa86621ae2867561,
         type: 2}
+    - target: {fileID: 8713503127196096270, guid: 62b5f9e2a348b4b469b519b9390db0bc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2726441605918540713, guid: 62b5f9e2a348b4b469b519b9390db0bc,
         type: 3}
       propertyPath: healthPoints
@@ -1533,11 +1538,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 01b2546c969fe814794af634cb4534f4, type: 2}
-    - target: {fileID: 8713503127196096270, guid: 62b5f9e2a348b4b469b519b9390db0bc,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62b5f9e2a348b4b469b519b9390db0bc, type: 3}
 --- !u!4 &1143236137 stripped
