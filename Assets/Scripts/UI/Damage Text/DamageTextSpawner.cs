@@ -10,11 +10,11 @@ namespace RPG.UI.DamageText
         // Start is called before the first frame update
         void Start()
         {
-            Spawn(11);
         }
         public void Spawn(float damageAmount)
         {
             DamageText instance = Instantiate<DamageText>(damageTextPrefab,transform);
+            instance.SetValue(damageAmount);
         }
     }
 
