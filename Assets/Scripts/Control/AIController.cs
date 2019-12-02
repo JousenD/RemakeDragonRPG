@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Combat;
 using RPG.Control;
-using RPG.Resources;
+using RPG.Attributes;
 using RPG.Movement;
 using System;
 using RPG.Core;
