@@ -28,6 +28,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseDistance: 5
   suspicionTime: 5
+  aggroCooldownTime: 5
   patrolPath: {fileID: 0}
   waypointTolerance: 1
   waypointDwellTime: 2
@@ -114,7 +115,7 @@ PrefabInstance:
     - target: {fileID: 2639459007697829355, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2639459007697829355, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
@@ -123,8 +124,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
       propertyPath: healthPoints
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: -8819527919374399172}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Aggrevate
+      objectReference: {fileID: 0}
+    - target: {fileID: -5960167117841316153, guid: f22a33afc1582e7458435cfe57fa666d,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2516527417299040400, guid: f22a33afc1582e7458435cfe57fa666d,
         type: 3}
